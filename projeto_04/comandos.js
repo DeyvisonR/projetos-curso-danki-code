@@ -18,17 +18,45 @@ $(function(){
         $('.menu-mobile').css('display','none')
     })
 
+    // colocando o slide nas imagens iniciais
+
+    $('.imagens-site > .center').slick({
+        centerMode: false,
+        slidesToShow: 6,
+        arrow: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    centerMode: true
+                }
+            },
+
+            {
+                breakpoint: 580,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: true
+                }
+            }
+
+        ]
+    })
+
     // colocando o slide no site da sessão de tratamentos
 
     var quantidadeElementos = $('.coluna').length;
 
     $(window).resize(function(){
         if($('html, body').width() <= 820 && $('html, body').width() > 500){
-            quantidadeElementos = 2
+            quantidadeElementos = 2;
+            curindex = 0;
         }
 
         if($('html, body').width() <= 500){
-            quantidadeElementos = 3
+            quantidadeElementos = 3;
+            curindex = 0;
         }
     })
 

@@ -1,0 +1,593 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body{
+    overflow-x: hidden;
+    height:  100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.center, .center-4{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-1{
+    width: 100%;
+    padding-bottom: 16%;
+    background-image: url("imagens/capa.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{
+    float: left;
+    padding: 45px 0 0 50px;
+}
+
+.logo h2{
+    color: white;
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.logo span{
+    color:#472663;
+}
+
+.menu{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    float: right;
+    padding: 0 4%;
+}
+
+.menu ul li{
+    display: inline-block;
+    padding: 50px 10px;
+}
+
+.menu ul li a{
+    color: white;
+    font-size: 22px;
+}
+
+.menu ul li:nth-of-type(1){
+    font-weight: bold;
+}
+
+.menu-mobile{
+    float: right;
+    position: relative;
+    top: -40px;
+    width: 100%;
+}
+
+.img-menu{
+    display: none;
+    cursor: pointer;
+    float: right;
+    width: 60px;
+    position: relative;
+    right: 10px;
+    top: -32px;
+}
+
+.menu-mobile ul{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    background-color: white;
+}
+
+.menu-mobile ul li:hover{
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.menu-mobile ul li{
+    border-bottom: 1px solid black;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    list-style-type: none;
+}
+
+.menu-mobile ul li a{
+    color: black;
+}
+
+.header-texto{
+    margin-top: 70px;
+    float: right;
+    margin-right: 10%;
+}
+
+.header-texto h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    color: white;
+}
+
+.header-texto p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+    color: white;
+    font-size: 17px;
+}
+
+.section-1{
+    background-color: #472663;
+    height: 400px;
+    width: 100%;
+}
+
+.texto-section-1{
+    float: left;
+    color: #d1c9d8;
+    padding-left: 2%;
+}
+
+.section-1 h2{
+    color: white;
+    font-size: 30px;
+    padding: 50px 0 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.section-1 p{
+    padding-bottom: 10px;
+}
+
+.section-1 p, .section-1 ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 4px;
+    font-size: 13px;
+}
+
+.section-1 ul li{
+    list-style-position: inside;
+}
+
+.section-1 a{
+    background-color: #ff703e;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.aa{
+    padding-top: 30px;
+}
+
+.section-1 .imagem-section-1{
+    float: right;
+    width: 6%;
+    height: 200px;
+    transform: translate(-980%, -75%);
+}
+
+.imagem-section-1 img{
+    height: 550px;
+}
+
+.section-2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 800px;
+    color: #472663;
+}
+
+.section-2 h2{
+    margin-top: 8%;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 0 2%;
+}
+
+.section-2 p{
+    padding: 0 2%;
+    max-width: 1000px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.img-conteudo{
+    background-image: url(imagens/mockup.jpg);
+    background-size: 100% 100%;
+    height: 80%;
+    width: 90%;
+    position: relative;
+    bottom: -12%;
+}
+
+.section-3{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.section-3 p{
+    max-width: 400px;
+    font-size: 12px;
+}
+
+.section-3 h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.s3-d1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+    background-color: #835fa8;
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 15% 60px 90px 2%;
+}
+
+.s3-d2{
+    background-color: #f4f8fb;
+    width: 50%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 15% 60px 90px 60px;
+}
+
+.membros{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.membros-single div{
+    float: left;
+}
+
+.slider-bullets div{
+    margin-top: 10px;
+    width: 14px;
+    height: 14px;
+    background-color: gray;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.section-4{
+    width: 100%;
+    background-color: #472663;
+    padding-bottom: 10%;
+}
+
+.center-2{
+    padding-left: 2%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 60px;
+}
+
+.formulario-final{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.formulario-final h2, .google-maps h2{
+    color: white;
+    font-size:30px
+}
+
+.formulario-final p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding-top: 20px;
+    max-width: 400px;
+    color: white;
+    font-size: 17px;
+}
+
+.formulario-final form{
+    padding-top: 30px;
+}
+
+.formulario-final input{
+    width: 100%;
+    max-width: 400px;
+    padding: 14px 0 14px 10px;
+    margin-top: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    color: black;
+}
+
+.text-area{
+    height: 130px;
+    resize: none;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 0 0 10px;
+    margin-top: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    color: black;
+}
+
+input::placeholder{
+    color: #b1b1b1;
+}
+
+textarea::placeholder{
+    color: #b1b1b1;
+}
+
+
+.formulario-final input[type="submit"]{
+    padding: 8px 0;
+    border-radius: 15px;
+    background-color: #ff703e;
+    border: 0;
+    outline: 0;
+    width: 80px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.google-maps{
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.mapa-1{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.mapa-2{
+	width: 100%;
+	padding-top:100%;
+}
+
+.map{
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	border: 5px solid black;
+}
+
+footer{
+    width: 100%;
+    padding: 30px 2% 50px 2%;
+    background-color: #1a2124;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.foo-p1{
+    float: left;
+}
+
+.foo-p2{
+    float: right;
+}
+
+@media screen and (max-width: 990px){
+    .imagem-section-1{
+        display: none;
+    }
+
+    .section-1{
+        height: auto;
+        padding-bottom: 8%;
+        text-align: center;
+    }
+
+    .section-4{
+        height: auto;
+        padding: 0 0 10% 0;
+    }
+    
+    .s3-d2{
+        padding: 20% 2% 90px 2%;
+    }
+
+    .s3-d1{
+        padding: 20% 2% 90px 2%;
+    }
+
+    .center-4{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .header-texto{
+        margin-top: 60px;
+        float: none;
+        text-align: center;
+        width: 100%;
+        padding: 0 1%;
+    }
+    
+    .header-texto p{
+        padding: 0 2%;
+    }
+
+    .menu{
+        display: none;
+        float: none;
+        text-align: center;
+        padding: 40px 0 0 0;
+    }
+    
+    .menu ul li{
+        display: block;
+        padding: 10px 0;
+    }
+
+    .img-menu{
+        display: block;
+    }
+
+    .logo{
+        float: left;
+        width: 100%;
+        padding: 40px 0 0 30px;
+    }
+
+    footer{
+        padding: 30px 2% 30px 2%;
+        text-align: center;
+    }
+    
+    .foo-p1{
+        float: none;
+    }
+    
+    .foo-p2{
+        padding-top: 10px;
+        float: none;
+    }
+    
+    .img-conteudo{
+        bottom: -6%;
+    }
+
+}
+
+@media screen and (max-width: 770px){
+    .center-2{
+        display: flex;
+        flex-direction: column;
+        padding: 0 2%;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding-top: 60px;
+    }
+    
+    .formulario-final{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .formulario-final p{
+        margin: 0 auto;
+    }
+    
+    .formulario-final input[type="submit"]{
+        width: 160px;
+    }
+    
+    .google-maps{
+        margin-top: 25px;
+        text-align: center;
+        padding: 0 2%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .mapa-1{
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .section-3{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .section-3 p{
+        max-width: 500px;
+        font-size: 12px;
+    }
+    
+    .s3-d1{
+        background-color: #835fa8;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 40px;
+        padding: 15% 2% 90px 2%;
+    }
+
+    .s3-d1 div{
+        text-align: center;
+    }
+    
+    .s3-d2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 15% 2% 90px 2%;
+    }
+
+    .teste5{
+        text-align: center;
+    }
+
+    .teste5 p{
+        margin: 0 auto;
+    }
+
+    .slider-bullets{
+        margin-top: 10px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

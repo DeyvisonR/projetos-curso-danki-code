@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+
+.menu{
+    display: flex;
+    gap: 50%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.menu-options a{
+    text-decoration: none;
+    color: black;
+    padding: 0px 18px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imga{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.menu-options{
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.bola{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background-color: #017143;
+    margin-right: -400px;
+    margin-bottom: -400px;
+}
+
+.midias-sociais{
+    display: block;
+    position: relative;
+    left: 570px;
+    bottom: 500px;
+}
+
+.midias-sociais img{
+    width: 18px;
+    margin-top: 20px;
+}
+
+.texto h1{
+    font-size: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 65px;
+    margin-top: 50px;
+}
+
+.texto span{
+    color: #017143;
+    font-size: 90px;
+}
+
+.texto p{
+    max-width: 600px;
+    margin-left: 65px;
+}
+
+.texto button{
+    display: block;
+    background-color: #017143;
+    color: white;
+    width: 120px;
+    height: 35px;
+    border-radius:50px;
+    text-align:center;
+    line-height: 35px;
+    margin-left: 70px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+
+.imagensf{
+    position: absolute;
+    top: 450px;
+    left: -330px;
+}
+
+@media screen and (max-width: 1370px){
+    .menu{
+        gap: 40%;
+    }
+    
+    .bola{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 950px;
+        height: 1000px;
+        border-radius: 50%;
+        background-color: #017143;
+        margin-right: -400px;
+        margin-bottom: -400px;
+    }
+
+    .midias-sociais{
+        display: block;
+        position: relative;
+        left: 520px;
+        bottom: 500px;
+    }
+
+    .imagensf{
+        position: absolute;
+        top: 400px;
+        left: -330px;
+    }
+    .texto h1{
+        font-size: 60px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 65px;
+        margin-top: 50px;
+        line-height: 80px;
+    }
+    
+    .texto span{
+        color: #017143;
+        font-size: 80px;
+    }
+    
+    .texto p{
+        max-width: 500px;
+        margin-left: 65px;
+    }
+}

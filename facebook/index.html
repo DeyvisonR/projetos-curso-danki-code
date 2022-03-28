@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0, maximum-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <title>Facebook</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+        <meta name="description" content="o Facebook e uma plantaforma
+        de mensagens e compartilhamento de fotos e videos">
+        <meta name="keywords" content="Facebook, midias-sociais, Face">
+        <meta name="author" content="deyvison">
+
+    </head>
+    <body>
+
+        <header>
+            <div class="center">
+                <h1>Facebook</h1>
+                <form class="logar">
+                    <div class="pt1">
+                        <p>Email ou Telefone:</p>
+                        <input type="email" name="email" title="usuario" required>
+                    </div>
+                    <div class="pt2">
+                        <p>Senha:</p>
+                        <input type="password" name="senha" title="login" required>
+                    </div>
+                    <input type="submit" name="logar-initial" value="Entrar">
+                </form>
+                <div class="clear"></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="center">
+                <section class="info">
+                    <h2>O Facebook ajuda você a se conectar e 
+                        compartilhar com as pessoas que fazem parte 
+                        da sua vida.</h2>
+                    <img src="img1.png" alt="imagem de pessoas não 
+                    suportada pelo seu navegador">
+                </section>
+
+                <section class="cadastro">
+                    <h2>Abra uma conta</h2>
+                    <h3>É rápido e fácil.</h3>
+                    <form>
+                        <div class="cadastro2">
+                            <input type="text" placeholder="Nome" required class="nomesobre">
+                            <input type="text" placeholder="Sobrenome" required class="nomesobre">
+                            <div><input type="email" placeholder="Email" required></div>
+                            <input type="password" placeholder="Senha" required>
+                        </div>
+                        <div class="nascimento">
+                            <h4>Data de Nascimento</h4>
+                            <div>
+                                <select id="dia" name="nascimento-dia" required>
+                                    <option selected disabled>Dia</option>
+                                    
+                                </select>
+                            </div>
+                            <div>
+                                <select name="nascimento-mes" required>
+                                    <option selected disabled>Mes</option>
+                                    <option value="1">Janeiro</option>
+                                    <option value="2">Fevereiro</option>
+                                    <option value="3">Março</option>
+                                    <option value="4">Abril</option>
+                                    <option value="5">Maio</option>
+                                    <option value="6">Junho</option>
+                                    <option value="7">Julho</option>
+                                    <option value="8">Agosto</option>
+                                    <option value="9">Setembro</option>
+                                    <option value="10">Outubro</option>
+                                    <option value="11">Novembro</option>
+                                    <option value="12">Desembro</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select id="ano" name="nascimento-ano" required>
+                                    <option selected disabled>Ano</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="genero">
+                            <h4>Gênero</h4>
+                            <div><input type="radio" name="sexo" value="Masculino"><span>Masculino</span></div>
+                            <div><input type="radio" name="sexo" value="Feminino"><span>Feminino</span></div>
+                            <div><input type="radio" name="sexo" value="Personalizado"><span>Personalizado</span></div>
+                        </div>
+                        <input type="submit" name="enviar" value="Cadastre-se">
+                    </form>
+                </section>
+                <div class="clear"></div>
+            </div>
+        </main>
+        <footer>
+            <div class="center">
+                <nav>
+                    <a href="#">Português(brasil)</a>
+                    <a href="#">English(us)</a>
+                    <a href="#">Español</a>
+                    <a href="#">Français(france)</a>
+                    <a href="#">Italiano</a>
+                    <a href="#">Deutsch</a>
+                    <a href="#">Aramaico</a>
+                    <a href="#">Hebraico</a>
+                    <button>+</button>
+                    <div class="linha"></div>
+                    <div class="links-finais">
+                        <a href="#">Cadastre-se</a>
+                        <a href="#">Entrar</a>
+                        <a href="#">Messenger</a>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+
+        <script>
+
+            var dia = document.getElementById('dia')
+            var ano = document.getElementById('ano')
+
+            for(i = 1900; i <= 2022; i++){
+                ano.innerHTML += `<option value="`+i+`">`+i+`</option>`
+            }
+
+            for(i = 1; i <= 31; i++){
+                dia.innerHTML += `<option value="`+i+`">`+i+`</option>`
+            }
+
+
+        </script>
+    </body>
+</html>

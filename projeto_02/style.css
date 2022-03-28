@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-1{
+    background-color: #D6D6D6;
+    width: 100%;
+    padding: 20px 4%;
+}
+
+.logo-1{
+    float: left;
+    width: 160px;
+    height: 60px;
+    background-image: url("imagens/logo1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo-2{
+    float: right;
+    width: 160px;
+    height: 60px;
+    background-image: url('imagens/logo2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg{
+    height: 560px;
+    background-image: url('imagens/bg-form.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.formulario{
+    float: right;
+    position: relative;
+    top: -20px;
+    width: 400px;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-right: 40px;
+}
+
+.formulario form{
+    padding: 0 12px;
+}
+
+.formulario h2{
+    padding: 20px 15px;
+    background-color: rgb(234, 236, 239);
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.formulario h3{
+    color: #525252;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.formulario input{
+    width: 100%;
+    padding: 14px 10px;
+    border: 1px solid #ccc;
+    outline: 0;
+}
+
+.formulario input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 18px;
+    background-color: #0d485e;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: #052c3a;
+}
+
+.formulario p{
+    color: #525252;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.formulario div{
+    padding: 20px 0;
+}
+
+.seta{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.info{
+    background-color: #d4d1d1;
+    padding: 70px 0 80px 0;
+    text-align: center;
+}
+
+.info h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    color: rgb(43, 37, 37);
+}
+
+.info p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.mosaicos{
+    margin-top: 3px;
+}
+
+.mosaicos img{
+    width: 60%;
+    height: 100%;
+    max-height: 350px;
+}
+
+.mosaicos div{
+    margin: 3px 0;
+}
+
+.mosaicos h3{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mosaicos p{
+    font-family:'Courier New', Courier, monospace;
+}
+
+.mosaico-elemento-1, 
+.mosaico-elemento-3{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 350px;
+}
+
+.mosaico-elemento-2, 
+.mosaico-elemento-4{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 350px;
+}
+
+.texto-mosaico, 
+.texto-mosaico-3, 
+.texto-mosaico-4{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    padding: 0 20px;
+    height: 350px;
+    max-height: 350px;
+    background-color: #65bbdd;
+}
+
+.texto-mosaico-3, 
+.texto-mosaico-4{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto-mosaico-4 h3{
+    line-height: 35px;
+}
+
+.texto-mosaico-4 p, 
+.texto-mosaico-3 p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+.footer-1{
+    background-color: #e5ebe8;
+    width: 100%;
+    padding: 50px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.footer-1 p{
+    margin-top: 25px;
+    padding: 0 20px;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.footer-2{
+    margin: 40px 0;
+    padding-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.footer-2 img{
+    padding-top: 10px;
+    width: 180px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 700px){
+    .header-1{
+        background-color: #D6D6D6;
+        width: 100%;
+        padding: 20px 4%;
+    }
+    
+    .logo-1{
+        float: none;
+        width: 160px;
+        height: 60px;
+        background-image: url("imagens/logo1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 20px;
+    }
+    
+    .logo-2{
+        float: none;
+        width: 160px;
+        height: 60px;
+        background-image: url('imagens/logo2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .logos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario{
+        text-align: center;
+        float: none;
+        position: relative;
+        top: -20px;
+        width: 80%;
+        height: 550px;
+        background-color: rgba(255, 255, 255, 0.7);
+        margin-right: 0;
+    }
+
+    .bloco-form{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 780px){
+    .mosaicos img{
+        width: 100%;
+        height: 100%;
+        max-height: 350px;
+    }
+    
+    .mosaico-elemento-1, 
+    .mosaico-elemento-3{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+    }
+    
+    .mosaico-elemento-2, 
+    .mosaico-elemento-4{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+    }
+    
+    .texto-mosaico, 
+    .texto-mosaico-3, 
+    .texto-mosaico-4{
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+        height: 350px;
+        max-height: 350px;
+        text-align: center;
+    }
+    
+    .texto-mosaico-3, 
+    .texto-mosaico-4{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .texto-mosaico-4 h3{
+        line-height: 35px;
+    }
+    
+    .texto-mosaico-4 p, 
+    .texto-mosaico-3 p{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 2px solid #ec2d2d;
+}
+
+.header img{
+    float: left;
+    width: 160px;
+    margin-left: 2%;
+}
+
+.header .menu{
+    float: right;
+    padding: 20px;
+}
+
+.header .menu ul li{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.header .menu ul li a{
+    color: black;
+}
+
+.header .menu ul li:nth-of-type(2){
+    font-weight: bold;
+}
+
+.img-menu{
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px;
+    display: none;
+}
+
+.img-menu img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.header .menu-mobile{
+    display: none;
+    float: none;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    z-index: 999;
+}
+
+.header .menu-mobile ul li{
+    cursor: pointer;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+    border-bottom: 1px solid red;
+    transition: 0.4s;
+    list-style-type: none;
+}
+
+.header .menu-mobile ul li a{
+    color: black;
+}
+
+.header .menu-mobile ul li:hover{
+    background-color: #242424;
+}
+
+.header .menu-mobile ul li:hover a{
+    color: white;
+}
+
+.header .menu-mobile ul li:nth-of-type(2){
+    font-weight: bold;
+}
+
+.veiculos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.linha{
+    margin: 50px 20px 0 20px;
+    width: 35%;
+    height: 1.5px;
+    background-color: black;
+}
+
+.veiculos h2{
+    font-weight: normal;
+    margin-top: 50px;
+}
+
+.veiculos-venda{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+aside{
+    width: 30%;
+    height: 100%;
+}
+
+.busca{
+    margin-left: 10%;
+    width: 70%;
+}
+
+.busca h2{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: left;
+}
+
+.barra-busca{
+    margin-top: 10px;
+    width: 100%;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    position: relative;
+    z-index: 500;
+}
+
+.barra-fill{
+    width: 0;
+    height: 18px;
+    border-radius: 20px;
+    border: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom, rgb(255, 255, 255) , rgb(200, 200, 200));
+    cursor: pointer;
+}
+
+.pointer-barra{
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255) , rgb(180, 180, 180));
+    border: 1px solid rgb(185, 176, 176);
+    position: absolute;
+    right: -10px;
+    top: -3px;
+}
+
+.busca p:nth-of-type(1){
+    float: left;
+}
+.busca p:nth-of-type(2){
+    float: right;
+}
+
+.busca-ano{
+    margin-top: 80px;
+}
+
+.busca-ano form{
+    margin-top: 10px;
+}
+
+.busca-ano form input{
+    width: 15px;
+    height: 15px;
+    display: none;
+}
+
+label{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+}
+
+.circle{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: black;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    display: none;
+}
+
+input[type="checkbox"]:checked + label > .circle{
+    display: block;
+}
+
+.busca-ano span{
+    margin-left: 8px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.conteudo-veiculos{
+    width: 70%;
+    overflow: auto;
+}
+
+.carros{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carro{
+    width: 33.3%;
+    float: left;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.imagem-carro{
+    width: 100%;
+    padding-top: 80%;
+    background-color: gray;
+    position: relative;
+}
+
+.imagem-carro img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.texto-carro{
+    margin-top: 10px;
+}
+
+.texto-carro h2{
+    font-size: 20px;
+}
+
+.texto-carro p{
+    margin-top: 2px;
+    color: #363636;
+    font-size: 16px;
+}
+
+.button{
+    margin-top: 10px;
+    width: 120px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 3px solid rgb(173, 2, 2);
+    border-top: 3px solid rgba(173, 2, 2, 0.7);
+}
+
+.button a{
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    background-color: #242424;
+    padding: 30px 2%;
+    color:  white;
+    margin-top: 80px;
+}
+
+footer nav{
+    float: left;
+}
+
+footer nav ul li{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+footer nav ul li a{
+    color: white;
+}
+
+.footer nav ul li:nth-of-type(2){
+    font-weight: bold;
+}
+
+footer p{
+    float: right;
+}
+
+@media screen and (max-width: 1000px){
+
+    .linha{
+        width: 28%;
+    }
+    
+    .veiculos-venda{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;    
+    }
+
+    aside{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .busca{
+        margin: 0;
+        display: inline-block;
+    }
+
+    .busca h2{
+        text-align: center;
+    }
+
+    .busca-ano {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .conteudo-veiculos{
+        margin-top: 100px;
+        width: 100%;
+        height: auto;
+        overflow:visible;
+    }
+
+}
+
+@media screen and (max-width: 860px){
+
+    footer nav{
+        float: none;
+        text-align: center;
+    }
+
+    footer p{
+        float: none;
+        margin-right: 0;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 760px){
+
+    .header .menu{
+        display: none;
+    }
+
+    .img-menu{
+        display: block;
+    }
+
+    .linha{
+        width: 20%;
+    }
+
+}
+
+@media screen and (max-width:680px){
+    
+    .carros{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .carro{
+        width: 100%;
+        display: inline-block;
+        float: none;
+        padding: 40px;
+    }
+
+    .texto-carro{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .texto-carro h2{
+        font-size: 20px;
+    }
+
+    .texto-carro p{
+        margin-top: 5px;
+    }
+
+    .button{
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    .linha{
+        width: 15%;
+    }
+    
+}
+
+@media screen and (max-width: 450px){
+
+    .ultimo-texto-header{
+        width: 90% !important;
+    }
+
+    .ultimo-texto-header h2{
+        font-size: 16px !important;
+    }
+
+    .linha{
+        width: 10%;
+    }
+
+}
+
+@media screen and (max-width: 426px){
+
+    .linha{
+        display: none;
+    }
+
+}

@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.barra{
+    background-color: #212343;
+    width: 100%;
+    height: 70px;
+}
+
+.barra span{
+    font-size: 20px;
+    color: #6253A4;
+}
+
+.barra h1{
+    font-size: 30px;
+    color: white;
+}
+
+.texto1{
+    padding: 15px 40px;
+}
+
+.background{
+    width: 100%;
+    height: 550px;
+    background-image:url(images/header_bg.png);
+    background-size:cover;
+    background-position: center;
+}
+
+.formulario {
+    float: right;
+    position: relative;
+    right: 5%;
+    top: -4%;
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    border: 12px solid rgba(200,200,200,0.3);
+    /*background-origin: padding-box;
+    serve para imagens*/
+    background-clip: padding-box;
+    /*serve para usar com o rgba no
+    padding?*/
+}
+
+.formulario h1{
+    font-weight: normal;
+    font-size: 24px;
+    padding: 1% 2%;
+    color: #B2B2B2;
+}
+
+.formulario h2{
+    display: inline-block;
+    font-size: 18px;
+    color: #B2B2B2;
+    padding-bottom: 10px;
+}
+
+.h2final{
+    padding: 4% 4%;
+}
+
+.formulario input{
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    border: 1px solid #B2B2B2;
+    outline: none;
+}
+
+.formulario div{
+    padding: 3% 4%;
+}
+
+.formulario input[type="submit"]{
+    width: 280px;
+    padding: 10px 0;
+    background-color: #363A6D;
+    color: white;
+    font-size: 25px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    border-top:0;
+	border-right: 0;
+	border-left: 0;
+    border-bottom: 5px solid #4A5097;
+}
+
+.centerbu{
+    text-align: center;
+}
+
+.formulario input[type="submit"]:hover{
+    transition: 0.2s;
+    background-color: #2c3169;
+}
+
+.backt{
+    float: left;
+    margin-top: 90px;
+    margin-left: 4%;
+    width: 50%;
+    background-color: rgba(33, 35, 67, 0.5);
+}
+
+.lista{
+    list-style-position: inside;
+    color: white;
+    padding: 2% 1.5%;
+}
+
+.lista li{
+    padding: 2.2% 0;
+    font-size: 15px;
+}
+
+.background2{
+    background-color: #DDDDDD;
+    width: 100%;
+}
+
+.background2 h1{
+    text-align: center;
+    padding-top: 1%;
+    font-size: 22px;
+}
+
+.background2 p{
+    width: 100%;
+    max-width: 800px;
+    margin: 1% auto;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.rp{
+    text-align: center;
+    position: relative;
+    top: 35px;
+}
+
+.mf{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.mf h1{
+    color: #52336C;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.ifm3{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.ifm3 div{
+    float: left;
+    width: 33%;
+    padding: 30px;
+}
+
+.ifm3 h1{
+    font-size: 28px;
+    padding-bottom: 4%;
+}
+
+.ifm3 p{
+    font-size: 18px;
+    width: 100%;
+    text-align: justify;
+}
+
+.clear{
+    clear: both;
+}
+
+.teste2{
+    margin-top: 8%;
+    width: 100%;
+    height: 0.2%;
+    background-color: black;
+}
+
+.fim{
+    width: 100%;
+    height: 20%;
+}
+
+.divf{
+    text-align: center;
+    padding-top: 0.3%;
+}
+
+.divf p{
+    color: #B2B2B2;
+    font-size: 20px;
+    padding-top: 0.3%;
+}
+
+@media screen and (max-width: 1024px){
+    .backt{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .ifm3 div{
+        width: 100%;
+        float: none;
+        display: inline-block;
+        max-width: 500px;
+        padding-bottom: 5%;
+    }
+
+    .background{
+        height: auto;
+    }
+
+    .formulario{
+        margin-left: 10%;
+        float: none;
+        display: inline-block;
+    }
+
+    .center3{
+        display: block;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .backt{
+        float: none;
+        display: inline-block;
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .tes2{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .formulario {
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-left: 3%;
+        float: none;
+        position: relative;
+        width: 100%;
+        height: 600px;
+        background-color: white;
+        border: 12px solid rgba(200,200,200,0.3);
+        /*background-origin: padding-box;
+        serve para imagens*/
+        background-clip: padding-box;
+        /*serve para usar com o rgba no
+        padding?*/
+    }
+
+    .formulario input[type="submit"]{
+        width: 80%;
+        padding: 10px 0;
+        background-color: #363A6D;
+        color: white;
+        font-size: 25px;
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+        border-top:0;
+        border-right: 0;
+        border-left: 0;
+        border-bottom: 5px solid #4A5097;
+    }
+}
+
+.ajuste1{
+    padding: 0 5%;
+}

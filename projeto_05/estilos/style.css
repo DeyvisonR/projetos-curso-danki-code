@@ -1,0 +1,624 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    padding: 15px 0;
+}
+
+.header img{
+    float: left;
+    width: 160px;
+    margin-left: 2%;
+}
+
+.header .menu{
+    float: right;
+    padding: 20px 0;
+}
+
+.header .menu ul li{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.header .menu ul li a{
+    color: black;
+}
+
+.header .menu ul li:nth-of-type(1){
+    font-weight: bold;
+}
+
+.img-menu{
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px;
+    display: none;
+}
+
+.img-menu img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.header .menu-mobile{
+    display: none;
+    float: none;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    z-index: 999;
+}
+
+.header .menu-mobile ul li{
+    cursor: pointer;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+    border-bottom: 1px solid red;
+    transition: 0.4s;
+    list-style-type: none;
+}
+
+.header .menu-mobile ul li a{
+    color: black;
+}
+
+.header .menu-mobile ul li:hover{
+    background-color: #242424;
+}
+
+.header .menu-mobile ul li:hover a{
+    color: white;
+}
+
+.header .menu-mobile ul li:nth-of-type(1){
+    font-weight: bold;
+}
+
+.background{
+    background-image: url(../imagens/bg.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    width: 100%;
+    height: 500px;
+}
+
+.texto-background{
+    color: white;
+    padding-top: 120px;
+}
+
+.texto-background div{
+    background-color: red;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    margin: 5px 0 0 12%;
+    line-height: 50px;
+}
+
+.texto-background div h2{
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.veiculos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.linha{
+    margin: 50px 20px 0 20px;
+    width: 20%;
+    height: 1.5px;
+    background-color: black;
+}
+
+.veiculos h2{
+    font-weight: normal;
+    margin-top: 50px;
+}
+
+.carros{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.carro{
+    width: 33.3%;
+    float: left;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+
+.imagem-carro{
+    width: 100%;
+    padding-top: 100%;
+    background-color: gray;
+    position: relative;
+}
+
+.imagem-carro img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.texto-carro{
+    margin-top: 10px;
+}
+
+.texto-carro h2{
+    font-size: 20px;
+}
+
+.texto-carro p{
+    margin-top: 2px;
+    color: #363636;
+    font-size: 16px;
+}
+
+.button{
+    margin-top: 10px;
+    width: 120px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 3px solid rgb(173, 2, 2);
+    border-top: 3px solid rgba(173, 2, 2, 0.7);
+}
+
+.button a{
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+}
+
+.servicos-depoimentos{
+    width: 100%;
+    display: flex;
+}
+
+.servicos{
+    width: 50%;
+    background-color: #242424;
+    color: white;
+}
+
+.conteudo-servicos{
+    padding: 50px 20% 50px 2%;
+    float: right;
+}
+
+.conteudo-servicos h1{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.conteudo-servicos ul li{
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 35px;
+}
+
+.conteudo-servicos ul{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.conteudo-servicos a{
+    width: 120px;
+    height: 50px;
+    margin-left: 30px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    cursor: pointer;
+    border-top: 1px solid white;
+    font-size: 20px;
+    line-height: 45px;
+    color: white;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.depoimentos{
+    width: 50%;
+    background-color: #EB2D2D;
+    color: white;
+}
+
+.conteudo-depoimentos{
+    padding: 50px 20% 50px 2%;
+    float: right;
+}
+
+.slide-depoimentos{
+    width: 100%;
+    overflow: hidden;
+}
+
+.depoimento{
+    float: left;
+    padding: 0 2%;
+}
+
+.depoimentos h1{
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.depoimentos p{
+    font-size: 18px;
+    font-weight: normal;
+    max-width: 400px;
+}
+
+.arrows{
+    float: left;
+    margin-top: 20px;
+}
+
+.arrows img{
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.pessoa-depoimento{
+    float: right;
+    margin-top: 20px;
+}
+
+.pessoa-depoimento h3{
+    color: #312525;
+    font-size: 18px;
+}
+
+.formulario{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.formulario form input{
+    width: calc(100% - 13px);
+    height: 40px;
+    border: 1px solid #E5E5E5;
+    margin: 0 5px;
+    margin-top: 20px;
+    padding-left: 8px;
+    outline: 0;
+}
+
+.formulario .w50{
+    width: 48%;
+    float: left;
+    margin-top: 10px;
+}
+
+.formulario form textarea{
+    width: calc(100% - 13px);
+    height: 130px;
+    border: 1px solid #E5E5E5;
+    margin: 0 5px;
+    margin-top: 10px;
+    padding-left: 8px;
+    padding-top: 5px;
+    resize: none;
+    outline: 0;
+}
+
+.formulario form input[type="submit"]{
+    width: 90px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #EB2D2D;
+    color: white;
+}
+
+.center-button{
+    text-align: center;
+    width: calc(100% - 13px);
+}
+
+footer{
+    width: 100%;
+    background-color: #242424;
+    padding: 30px 2%;
+    color:  white;
+    margin-top: 40px;
+}
+
+footer nav{
+    float: left;
+}
+
+footer nav ul li{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+footer nav ul li a{
+    color: white;
+}
+
+.header nav ul li:nth-of-type(1){
+    font-weight: bold;
+}
+
+footer p{
+    float: right;
+}
+
+@media screen and (max-width: 1040px){
+    .servicos{
+        width: 50%;
+        background-color: #242424;
+        color: white;
+    }
+
+    .conteudo-servicos{
+        padding: 50px 4%;
+        float: none;
+        text-align: center;
+    }
+
+    .conteudo-servicos a{
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .conteudo-servicos ul li{
+        font-size: 18px;
+        font-weight: normal;
+        margin-left: 30px;
+        text-align: left;
+    }
+    
+    .conteudo-servicos ul{
+        margin-top: 20px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .depoimentos{
+        width: 50%;
+        background-color: #EB2D2D;
+        color: white;
+    }
+    
+    .conteudo-depoimentos{
+        padding: 50px 4%;
+        float: right;
+    }
+    
+    .depoimentos h1{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .depoimentos p{
+        margin-top: 20px;
+        font-weight: normal;
+        max-width: none;
+    }
+    
+}
+
+@media screen and (max-width: 860px){
+    footer nav{
+        float: none;
+        text-align: center;
+    }
+
+    footer p{
+        float: none;
+        margin-right: 0;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .header .menu{
+        display: none;
+    }
+
+    .img-menu{
+        display: block;
+    }
+
+    .carros{
+        max-width: none;
+        margin-bottom: 100px;
+    }
+    
+    .carro{
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        float: none;
+        padding: 10%;
+        padding-bottom: 0;
+    }
+    
+    .imagem-carro{
+        width: 100%;
+        padding-top: 80%;
+        position: relative;
+    }
+    
+    .texto-carro{
+        margin-bottom: 20px;
+    }
+
+    .texto-carro h2{
+        margin-bottom: 5px;
+    }
+
+    .texto-carro p{
+        font-size: 18px;
+    }
+    
+    .button{
+        margin-top: 20px;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .servicos-depoimentos{
+        flex-direction: column;
+    }
+    
+    .servicos{
+        width: 100%;
+    }
+    
+    .conteudo-servicos{
+        padding: 50px 2%;
+        float: none;
+    }
+    
+    .conteudo-servicos a{
+        width: 120px;
+        height: 50px;
+        margin-left: 30px;
+        color: white;
+        background-color: red;
+        text-align: center;
+        cursor: pointer;
+        border-top: 1px solid white;
+        font-size: 20px;
+        line-height: 45px;
+        color: white;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+    
+    .depoimentos{
+        width: 100%;
+    }
+    
+    .conteudo-depoimentos{
+        padding: 50px 2%;
+        float: none;
+    }
+    
+    .depoimentos p{
+        width: 100%;
+        display: inline-block;
+        text-align: justify;
+        padding: 0 4%;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .background{
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 500px;
+    }
+
+    .texto-background{
+        color: white;
+        padding-top: 50px;
+    }
+    
+    .texto-background div{
+        background-color: red;
+        text-align: center;
+        width: 200px;
+        height: 50px;
+        margin: 5px 0 0 4%;
+        line-height: 50px;
+    }
+
+    .linha{
+        width: 15%;
+    }
+    
+    .formulario .w50{
+        width: calc(100% - 13px);
+        float: none;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .ultimo-texto-header{
+        width: 90% !important;
+    }
+
+    .ultimo-texto-header h2{
+        font-size: 16px !important;
+    }
+
+    .linha{
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .conteudo-servicos a{
+        margin-left: 15px;
+    }
+
+    .linha{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .arrows img{
+        margin-right: 20px;
+    }
+}

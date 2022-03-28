@@ -1,0 +1,789 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    overflow-x: hidden;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-1{
+    width: 100%;
+    position: relative;
+}
+
+.logo{
+    float: left;
+    padding-top: 15px;
+    padding-left: 2%
+}
+
+.logo img{
+    width: 200px;
+}
+
+.menu{
+    padding-top: 25px;
+    float: right;
+}
+
+.menu ul li{
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 40px;
+}
+
+.menu ul li a{
+    color: #b4b4b4;
+}
+
+.menu-mobile{
+    z-index: 999;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+}
+
+.menu-mobile ul{
+    background-color: white;
+}
+
+.menu-mobile ul li{
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    transition: 0.4s;
+}
+
+.menu-mobile ul li:hover{
+    background-color: gray;
+}
+
+.menu-mobile ul li:hover a{
+    color: black;
+}
+
+.menu-mobile ul li a{
+    color: #b4b4b4;
+    font-size: 14px;
+}
+
+.img-menu{
+    display: none;
+    float: right;
+    position: relative;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.img-menu img{
+    width: 30px;
+    height: 30px;
+}
+
+.imagens-site{
+    width: 100%;
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagem{
+    border: 2px solid black;
+    background-color: gray;
+    width: 15%;
+    padding: 5% 0;
+    margin: 0 8px;
+    float: left;
+}
+
+.imagens-parte-1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.imagens-parte-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.section-servicos{
+    position: relative;
+    top: -4%;
+    width: 100%;
+}
+
+.section-servicos h2{
+    font-size: 15px
+}
+
+.servico{
+    width: 40%;
+    background-color: #576975;
+    padding: 2% 0;
+}
+
+.servico-main{
+    width: 50%;
+    background-color: #688293;
+    padding: 7% 0;
+}
+
+.center-2{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    color: white;
+}
+
+.servico-texto{
+    padding: 10px 2%;
+    text-align: center;
+}
+
+.servico-texto img{
+    margin-top: 30px;
+}
+
+.servico-texto h2{
+    margin-bottom: 10px;
+}
+
+.servico-texto p{
+    font-size: 12px;
+    font-weight: 50;
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-info{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.dentista-imagem{
+    background-image: url("imagens/img_perfil.png");
+    background-size: 100% 100%;
+    width: 35%;
+    height: 500px;
+    margin: 0 2%;
+}
+
+.descricao{
+    width: 60%;
+    margin-right: 2%;
+}
+
+.descricao h2{
+    font-size: 18px;
+    color: #698293;
+    font-weight: normal;
+}
+
+.descricao p{
+    font-size: 12px;
+    color: #b4b4b4;
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+.videos-demonstrativos{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.video{
+    width: 30%;
+    margin: 0 2%;
+    margin-top: 100px;
+    padding: 8% 0;
+    position: relative;
+    border: 3px solid black;
+}
+
+.video iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 0;
+    outline: 0;
+}
+
+.tratamentos{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 2% 0 2%;
+    text-align: center;
+}
+
+.slide-tratamentos{
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-tratamentos-singles{
+    width: 100%;
+    overflow: hidden;
+}
+
+.tratamentos > h2{
+    text-align: center;
+    color: #698293;
+}
+
+.tratamentos .colunas{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    gap: 5%;
+    padding: 0 0;
+}
+
+.tratamentos .coluna{
+    overflow: hidden;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.tratamentos p{
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: justify;
+    color: #b4b4b4;
+    max-width: 300px;
+}
+
+.tratamento > h2{
+    text-align: left;
+    font-size: 18px;
+    color: #737373;
+}
+
+.bullets-nav{
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.bullets-nav div{
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: gray;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.a1{
+    display: none;
+}
+
+.depoimentos{
+    margin-top: 100px;
+    width: 100%;
+}
+
+.depoimentos > h2{
+    text-align: center;
+    font-weight: normal;
+    color: #688293;
+}
+
+.slide-depoimentos{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.depoimento{
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.bullets-nav2{
+    width: 100%;
+    text-align: center;
+}
+
+.bullets-nav2 div{
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: gray;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.depoimento p{
+    display: inline-block;
+    max-width: 600px;
+    color: #b4b4b4;
+    font-weight: normal;
+}
+
+.pessoa-depoimento{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.midias-sociais{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.instagram, .facebook{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 12px;
+    color: white;
+    font-weight: normal;
+}
+
+.instagram img, .facebook img{
+    margin-bottom: 10px;
+}
+
+.instagram{
+    background-color: #98a5ae;
+}
+
+.facebook{
+    background-color: #576975;
+}
+
+.imagens-ilustrativo{
+    width: 100%;
+}
+
+.imagem-ilustrativo{
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color: gray;
+    border: 5px solid white;
+    float: left;
+}
+
+.contato{
+    width: 100%;
+    margin-top: 80px;
+}
+
+.contato > h2{
+    text-align: center;
+    color: #698293;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.contato form{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.contato > form h2{
+    font-size: 15px;
+    color: #b4b4b4;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.contato > form input, form textarea{
+    width: 100%;
+    height: 36px;
+    outline: 0;
+    border: 1px solid #cecbcb;
+    resize: none;
+    padding-left: 8px;
+}
+.contato div{
+    margin: 20px 10px; 
+}
+
+.contato > form textarea{
+    height: 130px;
+    margin-bottom: 20px;
+}
+
+.contato > form input[type="submit"]{
+    width: 90px;
+    color: white;
+    background-color: #688293;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.contato > form input[type="submit"]:hover{
+    transition: 0.4s;
+    background-color: #55768c;
+}
+
+.center-button{
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    margin-top: 150px;
+}
+
+.informacoes{
+    width: 100%;
+    background-color: #688293;
+    padding: 100px 0;
+    color: white;
+}
+
+.conteudo{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.conteudo div{
+    margin: 0 3%;
+}
+
+.conteudo div h2{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.conteudo div p{
+    font-size: 14px;
+}
+
+.danki-code{
+    width: 100%;
+    text-align: center;
+    background-color: #576975;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 890px){
+
+    .videos-demonstrativos{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .video{
+        width: 80%;
+        margin: 0 1%;
+        margin-top: 40px;
+        padding: 22% 0;
+        border: 3px solid black;
+    }
+
+    .section-servicos{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .servico{
+        width: 55%;
+        padding: 5% 0;
+        background-color: #576975;
+    }
+    
+    .servico-main{
+        width: 70%;
+        background-color: #688293;
+        padding: 10% 0;
+    }
+    
+    .center-2{
+        flex-direction: column;
+        max-width: none;
+    }
+    
+    .servico-texto{
+        padding: 10px 2%;
+        text-align: center;
+    }
+    
+    .servico-texto img{
+        margin-top: 15px;
+    }
+
+    .section-info{
+        width: 100%;
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dentista-imagem{
+        padding: 0 2%;
+        width: 50%;
+    }
+    
+    .descricao{
+        margin: 0;
+        width: 70%;
+    }
+    
+    .descricao h2{
+        margin-bottom: 20px;
+    }
+    
+    .descricao p{
+        margin: 0 2%;
+        text-align: justify;
+    }
+
+    .imagem-ilustrativo{
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+
+    .imagens-ilustrativo div:nth-last-of-type(1n+7){
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 820px){
+    .center{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .header-1{
+        width: 100%;
+    }
+    
+    .logo{
+        
+        padding-top: 15px;
+        padding-left: 2%
+    }
+    
+    .logo img{
+        width: 200px;
+    }
+    
+    .menu{
+        display: none;
+    }
+
+    .img-menu{
+        display: block;
+    }
+
+    .dentista-imagem{
+        padding: 0 2%;
+        width: 60%;
+    }
+
+    .conteudo div{
+        margin: 0 2%;
+    }
+    /*preparando a sessão de tratamentos para o slide*/
+    
+    .tratamentos{
+        width: 100%;
+        max-width: none;
+        margin: 0 0;
+        padding: 60px 2% 0 2%;
+    }
+
+    .slide-tratamentos{
+        width: 100%;
+        overflow: hidden;
+        padding: 0 5%;
+    }
+
+    .slide-tratamentos-singles{
+        width: 160%;
+        overflow: auto;
+    }
+
+    .tratamentos .colunas{
+        width: 100%;
+        margin-top: 80px;
+        display: flex;
+        gap: 10%;
+    }
+    
+    .tratamentos .coluna{
+        overflow: hidden;
+        width: calc(100% / 3);
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .bullets-nav{
+        display: block;
+    }
+
+    div.a1{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 740px){
+
+    .informacoes{
+        padding: 20px 0;
+    }
+
+    .conteudo{
+        display: inline-block;
+    }
+    
+    .conteudo div{
+        width: 100%;
+        margin: 40px 2%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 720px){
+
+    .imagem-ilustrativo{
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+        background-color: gray;
+        border: 5px solid white;
+        float: left;
+    }
+
+    .imagens-ilustrativo div:nth-last-of-type(1n+4){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .tratamentos{
+        width: 100%;
+        max-width: none;
+        text-align: center;
+        margin: 0 auto;
+        padding: 80px 4% 0 4%;
+    }
+
+    .tratamentos h2{
+        text-align: center;
+    }
+
+    .tratamentos p{
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 14px;
+        text-align: justify;
+        color: #b4b4b4;
+        max-width: 300px;
+    }
+
+    .slide-tratamentos{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slide-tratamentos-singles{
+        width: 300%;
+        overflow: auto;
+    }
+
+    .tratamentos .colunas{
+        width: 100%;
+        margin-top: 80px;
+        display: flex;
+        gap: 0;
+        padding: 0 0 0 0;
+    }
+    
+    .tratamentos .coluna{
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .bullets-nav{
+        display: block;
+    }
+
+    div.a1{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 460px){
+
+    .slide-tratamentos-singles{
+        width: 350%;
+        overflow: auto;
+    }
+
+    .tratamentos .colunas{
+        width: 100%;
+        margin-top: 80px;
+        display: flex;
+        gap: 7%;
+        padding: 0 0 0 0;
+    }
+
+}

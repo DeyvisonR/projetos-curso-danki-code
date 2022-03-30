@@ -8,7 +8,7 @@ $(function(){
 
     // colocando a animação do scrolltop no menu em todas as paginas
 
-    var directory = '/curso/projetos-curso-danki-code/projeto_05/home.html';
+    var directory = 'projetos-curso-danki-code/projeto_05/home.html';
 
     $('[goto="#contato"]').click(function(){
         location.href = directory +'?contato'

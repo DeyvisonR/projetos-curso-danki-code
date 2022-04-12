@@ -24,6 +24,7 @@ html, body{
 /*aside*/
 
 .aside{
+    position: absolute;
     width: 250px;
     float: left;
     height: 100%;
@@ -33,6 +34,7 @@ html, body{
 }
 
 .fechar-menu{
+    cursor: pointer;
     display: none;
     width: 30px;
     border: 1px solid white;
@@ -142,7 +144,7 @@ html, body{
 }
 
 .main{
-    float: left;
+    float: right;
     width: calc(100% - 250px);
     height: 100%;
     overflow-y: auto;

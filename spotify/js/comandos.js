@@ -3,13 +3,22 @@ $(function(){
     // colocando o menu mobile
 
     $('.menu-icon').click(function(){
-        $('.aside').css('position', 'absolute')
-        $('.aside').fadeIn()
-    })
+        $('.aside').fadeIn();
+    });
 
     $('.fechar-menu').click(function(){
-        $('.aside').fadeOut()
+        $('.aside').fadeOut();
+    });
+
+    $(window).resize(function(){
+        if($(window).width() >= 600){
+            $('.aside').css('display', 'block');
+        }else{
+            $('.aside').css('display', 'none');
+        }
     })
+
+    // colocando o sistema de musica e o controladores deles
 
     var audioPlayer = document.getElementById('audioPlayer');
     var playButton = document.getElementById('playButton');
@@ -23,7 +32,7 @@ $(function(){
             var image = item.getAttribute('data-image');
             var artist = item.getAttribute('data-artist');
             var song = item.getAttribute('data-song');
-            var file = item.getAttribute('data-file')
+            var file = item.getAttribute('data-file');
 
             playArtistComponent[0].innerHTML = `
             <img src="`+image+`"></img>

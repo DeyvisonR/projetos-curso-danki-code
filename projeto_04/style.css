@@ -292,6 +292,7 @@ html, body{
 }
 
 .bullets-nav div{
+    transform: translateX(10px);
     cursor: pointer;
     width: 16px;
     height: 16px;
@@ -337,6 +338,7 @@ html, body{
 }
 
 .bullets-nav2 div{
+    transform: translateX(10px);
     cursor: pointer;
     width: 16px;
     height: 16px;
@@ -710,7 +712,7 @@ footer{
         max-width: none;
         text-align: center;
         margin: 0 auto;
-        padding: 80px 4% 0 4%;
+        padding: 60px 4% 0 4%;
     }
 
     .tratamentos h2{

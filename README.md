@@ -17,3 +17,5 @@
 <a target="_blank" href="https://deyvisonr.github.io/projetos-curso-danki-code/projeto_05/home.html">site institucional da rm veículos</a>
 
 <a target="_blank" href="https://deyvisonr.github.io/projetos-curso-danki-code/projeto_exercicio%20starbucks/">landing page do Starbucks</a>
+
+<a target="_blank" href="https://deyvisonr.github.io/projetos-curso-danki-code/spotify/">spotify</a>

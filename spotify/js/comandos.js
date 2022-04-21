@@ -60,44 +60,41 @@ $(function(){
             pauseButton.style.display = "inline-block";
             music = true;
 
-            if(music == true){
-                playButton.addEventListener('click', function(){
+            playButton.addEventListener('click', function(){
+    
+                audioPlayer.play()
+                playButton.style.display = 'none'
+                pauseButton.style.display = 'inline-block'
         
-                    audioPlayer.play()
-                    playButton.style.display = 'none'
-                    pauseButton.style.display = 'inline-block'
-            
-                });
-            
-                pauseButton.addEventListener('click', function(){
-            
-                    audioPlayer.pause()
-                    playButton.style.display = 'inline-block'
-                    pauseButton.style.display = 'none'
-            
-                });
-            
-                backButton.addEventListener('click', function(){
-                    audioPlayer.currentTime = audioPlayer.currentTime - 5;
-                });
-            
-                forButton.addEventListener('click', function(){
-                    audioPlayer.currentTime = audioPlayer.currentTime + 5;
-                });
-            
-                backButton_fast.addEventListener('click', function(){
-                    audioPlayer.currentTime = audioPlayer.currentTime - 10;
-                });
-            
-                forButton_fast.addEventListener('click', function(){
-                    audioPlayer.currentTime = audioPlayer.currentTime + 10;
-                });
-            }
+            });
+        
+            pauseButton.addEventListener('click', function(){
+        
+                audioPlayer.pause()
+                playButton.style.display = 'inline-block'
+                pauseButton.style.display = 'none'
+        
+            });
+        
+            backButton.addEventListener('click', function(){
+                audioPlayer.currentTime = audioPlayer.currentTime - 5;
+            });
+        
+            forButton.addEventListener('click', function(){
+                audioPlayer.currentTime = audioPlayer.currentTime + 5;
+            });
+        
+            backButton_fast.addEventListener('click', function(){
+                audioPlayer.currentTime = audioPlayer.currentTime - 10;
+            });
+        
+            forButton_fast.addEventListener('click', function(){
+                audioPlayer.currentTime = audioPlayer.currentTime + 10;
+            });
 
         });
 
     });
-
     
 
     // colocando a barra de progresso da musica

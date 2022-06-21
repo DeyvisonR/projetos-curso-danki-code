@@ -15,10 +15,15 @@ $(function(){
 
     $("nav ul li a").click(function(){
         href = $(this).attr("href");
+        var offSettop = $(href).offset().top;
+        $("html, body").animate({"scrollTop": offSettop});
         return false;
     });
 
     $("nav ul li").click(function(){
         href = $(this).find("a").attr("href");
+        offSettop = $(href).offset().top;
+        $("html, body").animate({"scrollTop": offSettop});
+        return false;
     });
 });

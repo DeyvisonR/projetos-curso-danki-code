@@ -7,37 +7,47 @@
     <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--adicionando fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
     <title>projeto_11</title>
 </head>
 <body>
 
     <aside class="aside-principal">
-        <a href="#"><div class="logo">
+
+        <div class="logo">
+            <div class="icone-menu-fechar">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
             <h1>monki</h1>
-        </div></a>
+        </div>
         <div class="options-aside">
 
-            <div class="option-aside active">
+            <div option="painel" class="option-aside">
                 <i class="fa-solid fa-house"></i>
                 <h2>PAINEL</h2>
             </div>
-            <div class="option-aside">
+            <div option="conteudo" class="option-aside">
                 <i class="fa-solid fa-window-restore"></i>
                 <h2>CONTEÚDO</h2>
             </div>
-            <div class="option-aside">
+            <div option="estatisticas" class="option-aside">
                 <i class="fa-solid fa-chart-column"></i>
                 <h2>ESTATÍSTICAS</h2>
             </div>
-            <div class="option-aside">
+            <div option="configuracoes" class="option-aside">
                 <i class="fa-solid fa-gear"></i>
                 <h2>CONFIGURAÇÕES</h2>
             </div>
-            <div class="option-aside">
+            <div option="duvidas" class="option-aside">
                 <i style="margin-left: 3px;" class="fa-solid fa-question"></i>
                 <h2>DÚVIDAS</h2>
             </div>
-            <div class="option-aside">
+            <div option="usuarios" class="option-aside">
                 <i class="fa-solid fa-user"></i>
                 <h2>USUÁRIOS</h2>
             </div>
@@ -55,6 +65,11 @@
 
     <main>
         <header>
+            
+            <div class="icone-menu-abrir">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
             <div class="header-container">
                 <div class="site-empresa usuario-campo">
                     <h2>SiteRepresentativo.com.br</h2>
@@ -67,7 +82,7 @@
                     <div class="option-header">
     
                     </div>
-                    <div class="option-header">
+                    <div class="option-header option-header2">
                         <i class="fa-solid fa-bell"></i>
                         <div class="conteudo-option-header">
 
@@ -85,8 +100,85 @@
             </div>
         </header>
 
+        <section class="conteudo-pagina">
+            
+        </section>
+
         <aside class="aside-main">
             <h1 class="titulo-aside-main">ÚLTIMAS ATUALIZAÇÕES</h1>
+
+            <div class="content-aside-main">
+                <div class="content-aside-single">
+                    <div class="bool-wraper">
+                        <div class="bool">
+                            <div class="linha-bool"></div>
+                        </div>
+                    </div>
+                    <div class="content-aside2">
+                        <h3 class="tempo-atualizacao">HÁ {} MINUTOS</h3>
+                        <div class="content-atualizacao">
+                            <h2>TITULO DA ATUALIZAÇÂO</h2>
+                            <p>conteudo da atualização com mais detalhes do que foi feito</p>
+                        </div>
+                    </div> 
+                </div><!--content-aside-single-->
+                <div class="content-aside-single">
+                    <div class="bool-wraper">
+                        <div class="bool">
+                            <div class="linha-bool"></div>
+                        </div>
+                    </div>
+                    <div class="content-aside2">
+                        <h3 class="tempo-atualizacao">HÁ {} MINUTOS</h3>
+                        <div class="content-atualizacao">
+                            <h2>TITULO DA ATUALIZAÇÂO</h2>
+                            <p>conteudo da atualização com mais detalhes do que foi feito</p>
+                        </div>
+                    </div> 
+                </div><!--content-aside-single-->
+                <div class="content-aside-single">
+                    <div class="bool-wraper">
+                        <div class="bool">
+                            <div class="linha-bool"></div>
+                        </div>
+                    </div>
+                    <div class="content-aside2">
+                        <h3 class="tempo-atualizacao">HÁ {} MINUTOS</h3>
+                        <div class="content-atualizacao">
+                            <h2>TITULO DA ATUALIZAÇÂO</h2>
+                            <p>conteudo da atualização com mais detalhes do que foi feito</p>
+                        </div>
+                    </div> 
+                </div><!--content-aside-single-->
+                <div class="content-aside-single">
+                    <div class="bool-wraper">
+                        <div class="bool">
+                            <div class="linha-bool"></div>
+                        </div>
+                    </div>
+                    <div class="content-aside2">
+                        <h3 class="tempo-atualizacao">HÁ {} MINUTOS</h3>
+                        <div class="content-atualizacao">
+                            <h2>TITULO DA ATUALIZAÇÂO</h2>
+                            <p>conteudo da atualização com mais detalhes do que foi feito</p>
+                        </div>
+                    </div> 
+                </div><!--content-aside-single-->
+                <div class="content-aside-single">
+                    <div class="bool-wraper">
+                        <div class="bool">
+                            <div class="linha-bool"></div>
+                        </div>
+                    </div>
+                    <div class="content-aside2">
+                        <h3 class="tempo-atualizacao">HÁ {} MINUTOS</h3>
+                        <div class="content-atualizacao">
+                            <h2>TITULO DA ATUALIZAÇÂO</h2>
+                            <p>conteudo da atualização com mais detalhes do que foi feito</p>
+                        </div>
+                    </div> 
+                </div><!--content-aside-single-->
+            </div><!--content-aside-main-->
         </aside>
     </main>
     <div class="clear"></div>

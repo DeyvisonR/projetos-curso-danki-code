@@ -24,6 +24,8 @@
 
 <a target="_blank" href="https://deyvisonr.github.io/projetos-curso-danki-code/projeto_10/">projeto 10</a>
 
+<a target="_blank" href="https://deyvisonr.github.io/projetos-curso-danki-code/projeto_11/">uma dashboard para computador e mobile pegando as paginas sem atualizar com o ajax</a>
+
 <a target="_blank" href="https://deyvisonr.github.io/projetos-curso-danki-code/projeto_exercicio%20starbucks/">landing page do Starbucks</a>
 
 <a target="_blank" href="https://deyvisonr.github.io/projetos-curso-danki-code/spotify/">spotify</a>
